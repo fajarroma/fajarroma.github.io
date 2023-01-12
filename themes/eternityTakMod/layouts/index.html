@@ -14,6 +14,17 @@
 				<button onclick="window.location.href='{{ relref . .Site.Params.Homepage }}'"
 				class="button is-white is-large is-outlined">Enter</button>
 			</div>
+				{{ $socials := .Site.Params.socials }}
+				{{ if and .IsHome $socials }}
+						{{ $socials = where $socials "landing" true }}
+				{{ end }}
+				{{ range $el := $socials }}
+						<div class="social">
+								<a href="{{ $el.url }}" {{ if $el.rel_me }} rel="me" {{ end }} target="_blank">
+										<i class="{{ $el.icon }}"></i>
+								</a>
+						</div>
+				{{ end }}
 			{{ with .Params.FeaturedTags }}
 				<div class="columns is-mobile is-multiline">
 					{{ range . }}
