@@ -1,8 +1,12 @@
 :root {
-    --main: #e8607b;
-    --main-light: #ff8099;
-    --dark: #000;
-    --dark-light: #101010;
-    --white: #eee;
+    --main: #F4D35E;
+    --main-light: #F7DE83;
+    --dark: #69140E;
+    --dark-light: #821912;
+    --white: #F8F7FF;
     --grey: rgb(169, 169, 169);
 }
+/* 
+    https://coolors.co/f4d35e-f7de83-69140e-821912-f8f7ff
+    https://coolors.co/e8607b-ff8099-000000-000000-eeeeee
+*/
